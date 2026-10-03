@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>符ナビ｜麻雀の点数計算・符計算アプリ【無料・初心者向け】</title>
+  <meta name="description" content="麻雀の点数がわからなくても大丈夫。あがった手牌をタップするだけで、何点払うかがすぐわかる無料アプリです。役・ドラ・符も自動で数え、内訳と用語の解説つきで初心者でも安心。">
+  <meta name="theme-color" content="#1b5e43">
+  <link rel="canonical" href="https://fu-koro.com/mahjong-fu-calculator/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:title" content="符ナビ｜麻雀の点数計算・符計算アプリ【無料・初心者向け】">
+  <meta property="og:description" content="麻雀の点数がわからなくても大丈夫。あがった手牌をタップするだけで、何点払うかがすぐわかる無料アプリです。役・ドラ・符も自動で数え、内訳と用語の解説つきで初心者でも安心。">
+  <meta property="og:url" content="https://fu-koro.com/mahjong-fu-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://fu-koro.com/mahjong-fu-calculator/ogp.png">
+  <meta property="og:site_name" content="fu-koro のツール">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <script id="adsbygoogle-script" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953398950283499" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css?v=15cdb644aa">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">符ナビ</h1>
+    <p class="site-lead">麻雀の点数計算・符計算アプリ。あがった牌をタップするだけで、点数・役・符を自動で計算します。登録不要・無料。</p>
+  </header>
+
+  <main>
+    <nav class="mode-switch" id="mode-switch" aria-label="モード"></nav>
+
+    <div id="calculator">
+      <section class="table" id="hand" aria-labelledby="hand-heading"></section>
+
+      <section class="panel" id="palette" aria-label="牌を選ぶ"></section>
+
+      <section class="panel" id="conditions" aria-label="あがった状況"></section>
+
+      <section class="panel" id="dora" aria-label="ドラ"></section>
+
+      <section class="panel result" id="result" aria-label="計算結果" aria-live="polite"></section>
+
+      <aside class="ad" id="ad" aria-label="広告" hidden></aside>
+    </div>
+
+    <div id="drill" hidden></div>
+
+    <noscript>
+      <p class="panel">このアプリは JavaScript を使います。ブラウザの設定で JavaScript を有効にしてください。</p>
+    </noscript>
+
+    <article class="guide">
+      <h2>符計算のやり方</h2>
+      <p>
+        符は、あがれば必ずもらえる<strong>副底 20 符</strong>に、あがり方・手の中の組・雀頭・待ちの形による符を足して、最後に<strong>10 符単位で切り上げ</strong>て求めます。
+      </p>
+
+      <h3>足していく符</h3>
+      <table class="guide-table">
+        <thead>
+          <tr><th scope="col">項目</th><th scope="col">符</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">副底（必ず付く）</th><td>20</td></tr>
+          <tr><th scope="row">鳴かずにロン</th><td>10</td></tr>
+          <tr><th scope="row">ツモ</th><td>2</td></tr>
+          <tr><th scope="row">明刻（ポンした 3 枚）</th><td>2（1・9・字牌は 4）</td></tr>
+          <tr><th scope="row">暗刻（自分でそろえた 3 枚）</th><td>4（1・9・字牌は 8）</td></tr>
+          <tr><th scope="row">明槓</th><td>8（1・9・字牌は 16）</td></tr>
+          <tr><th scope="row">暗槓</th><td>16（1・9・字牌は 32）</td></tr>
+          <tr><th scope="row">雀頭が 白・發・中・場風・自風</th><td>2</td></tr>
+          <tr><th scope="row">嵌張・辺張・単騎待ち</th><td>2</td></tr>
+        </tbody>
+      </table>
+
+      <h3>例外</h3>
+      <ul>
+        <li>平和（符が付く組も待ちもない形）を鳴かずにツモしたときは、ツモの 2 符を付けず <strong>20 符</strong>。</li>
+        <li>七対子は、いつでも <strong>25 符</strong>。</li>
+        <li>鳴いてロンして 20 符のままなら、<strong>30 符</strong>として計算します。</li>
+      </ul>
+
+      <h3>翻数の数え方</h3>
+      <p>
+        翻数は、成立した役の翻数の合計に、ドラ・赤ドラ・裏ドラの枚数を足したものです。ドラは卓でめくられている「ドラ表示牌」の次の牌で、9 の次は 1、北の次は東、中の次は白になります。役が 1 つもないと、ドラがあってもあがれません。
+      </p>
+
+      <h3>点数の出し方</h3>
+      <p>
+        基本点 ＝ 符 × 2<sup>（翻数＋2）</sup>。子のロンは基本点の 4 倍、親のロンは 6 倍を、100 点単位に切り上げます。
+        5 翻以上、または基本点が 2,000 を超えると満貫（子 8,000 点・親 12,000 点）です。本場があるときは、1 本場につきロンは 300 点、ツモは払う 3 人がそれぞれ 100 点を多く払います。
+      </p>
+
+      <p class="guide-more"><a href="guide/">点数計算の解説をもっと読む（符の数え方・点数早見表・役一覧など）</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>標準的なルール（喰いタンあり、連風牌の雀頭は 2 符、切り上げ満貫なし、ダブル役満なし）で計算しています。</p>
+    <ul class="footer-links">
+      <li><a href="/">fu-koro のツール</a></li>
+      <li><a href="/about/">運営者情報</a></li>
+      <li><a href="/privacy/">プライバシーポリシー</a></li>
+      <li><a href="/contact/">お問い合わせ</a></li>
+    </ul>
+    <small>© 2026 fu-koro</small>
+  </footer>
+
+  <script src="assets/app.js?v=97931dfc6e" defer></script>
+</body>
+</html>

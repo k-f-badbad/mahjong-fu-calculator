@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>満貫・跳満・役満｜麻雀の点数計算 符ナビ</title>
+  <meta name="description" content="麻雀の満貫・跳満・倍満・三倍満・役満の点数を、子と親、ロンとツモに分けて一覧にしました。4 翻 40 符や 3 翻 70 符が満貫になる理由や、数え役満の扱いも解説します。">
+  <meta name="theme-color" content="#1b5e43">
+  <link rel="canonical" href="https://fu-koro.com/mahjong-fu-calculator/guide/limits/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:title" content="満貫・跳満・役満｜麻雀の点数計算 符ナビ">
+  <meta property="og:description" content="麻雀の満貫・跳満・倍満・三倍満・役満の点数を、子と親、ロンとツモに分けて一覧にしました。4 翻 40 符や 3 翻 70 符が満貫になる理由や、数え役満の扱いも解説します。">
+  <meta property="og:url" content="https://fu-koro.com/mahjong-fu-calculator/guide/limits/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://fu-koro.com/mahjong-fu-calculator/ogp.png">
+  <meta property="og:site_name" content="fu-koro のツール">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <script id="adsbygoogle-script" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953398950283499" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../styles.css?v=15cdb644aa">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="breadcrumb" aria-label="現在地">
+      <ol>
+        <li><a href="/">fu-koro のツール</a></li>
+        <li><a href="../../">符ナビ</a></li>
+        <li><a href="../">解説</a></li>
+      </ol>
+    </nav>
+    <h1 class="site-title">満貫・跳満・役満</h1>
+    <p class="site-lead">翻が多い手は、符に関係なく点数が決まります。</p>
+  </header>
+
+  <main>
+    <article class="guide guide-page">
+      <p>翻が増えるほど点数は倍々に増えていきますが、そのままでは大きくなりすぎるので、上限が決まっています。この上限の段階を、満貫・跳満・倍満・三倍満・役満と呼びます。</p>
+
+      <h2>点数の一覧</h2>
+      <div class="table-scroll">
+      <table class="guide-table score-table" data-table="limits">
+        <caption>子のツモは「子が払う点-親が払う点」、親のツモは子がそれぞれ払う点</caption>
+        <thead>
+          <tr><th scope="col">名前</th><th scope="col">子ロン</th><th scope="col">子ツモ</th><th scope="col">親ロン</th><th scope="col">親ツモ</th></tr>
+        </thead>
+        <tbody>
+          <tr data-limit="mangan"><th scope="row">満貫<span class="row-note">5 翻（4 翻以下でも基本点が 2,000 点を超えたとき）</span></th><td>8,000</td><td>2,000-4,000</td><td>12,000</td><td>4,000</td></tr>
+          <tr data-limit="haneman"><th scope="row">跳満<span class="row-note">6〜7 翻</span></th><td>12,000</td><td>3,000-6,000</td><td>18,000</td><td>6,000</td></tr>
+          <tr data-limit="baiman"><th scope="row">倍満<span class="row-note">8〜10 翻</span></th><td>16,000</td><td>4,000-8,000</td><td>24,000</td><td>8,000</td></tr>
+          <tr data-limit="sanbaiman"><th scope="row">三倍満<span class="row-note">11〜12 翻</span></th><td>24,000</td><td>6,000-12,000</td><td>36,000</td><td>12,000</td></tr>
+          <tr data-limit="yakuman"><th scope="row">役満<span class="row-note">13 翻以上、または役満の役</span></th><td>32,000</td><td>8,000-16,000</td><td>48,000</td><td>16,000</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h2>4 翻以下でも満貫になるとき</h2>
+      <p>4 翻以下の手は符で点数が変わりますが、基本点（符 × 2 の（翻数 + 2）乗）が 2,000 点を超えると満貫になります。4 翻なら 40 符以上、3 翻なら 70 符以上がこれに当たります。</p>
+      <p>4 翻 30 符（基本点 1,920 点）と 3 翻 60 符（基本点 1,920 点）は満貫に届かず、子のロンで 7,700 点、親のロンで 11,600 点です。これを満貫として扱う「切り上げ満貫」というルールもありますが、このサイトの計算アプリでは使っていません。</p>
+
+      <h2>役満</h2>
+      <p>国士無双や四暗刻などの役満の役があれば、ほかの役やドラに関係なく役満です。役満の役がなくても、役とドラを合わせて 13 翻以上になれば役満として数えます（数え役満）。</p>
+      <p>役満の役が 2 つ以上あるときに 2 倍・3 倍にする「ダブル役満」というルールもありますが、このサイトでは使わず、いくつあっても役満 1 つ分として計算します。</p>
+      <aside class="guide-cta">
+        <p>自分の手で確かめるなら、牌をタップするだけで点数と符の内訳がわかる計算アプリをどうぞ。</p>
+        <a class="button" href="../../">符ナビで計算する</a>
+      </aside>
+
+      <h2>ほかの解説</h2>
+      <ul class="guide-links">
+        <li><a href="../flow/">点数計算の流れ</a><span>あがってから点数が決まるまでの 6 つの手順</span></li>
+        <li><a href="../fu/">符計算のやり方</a><span>副底・あがり方・面子・雀頭・待ちの符を足して切り上げる</span></li>
+        <li><a href="../meld-fu/">面子と雀頭の符</a><span>刻子・槓子の符の早見表と、雀頭に符が付く条件</span></li>
+        <li><a href="../wait-fu/">待ちの種類と符</a><span>両面・嵌張・辺張・単騎・双碰の見分け方と符</span></li>
+        <li><a href="../score-table/">点数早見表</a><span>符と翻から、子・親、ロン・ツモの点数を引く表</span></li>
+        <li><a href="../yaku/">役一覧</a><span>すべての役の条件と、門前・鳴いたときの翻数</span></li>
+        <li><a href="../honba/">本場と支払い</a><span>本場の数え方と、ロン・ツモで上乗せする点数</span></li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>標準的なルール（喰いタンあり、連風牌の雀頭は 2 符、切り上げ満貫なし、ダブル役満なし）で説明しています。</p>
+    <ul class="footer-links">
+      <li><a href="/">fu-koro のツール</a></li>
+      <li><a href="/about/">運営者情報</a></li>
+      <li><a href="/privacy/">プライバシーポリシー</a></li>
+      <li><a href="/contact/">お問い合わせ</a></li>
+    </ul>
+    <small>© 2026 fu-koro</small>
+  </footer>
+</body>
+</html>
