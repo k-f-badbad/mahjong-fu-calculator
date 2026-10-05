@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>点数計算の流れ｜麻雀の点数計算 符ナビ</title>
+  <meta name="description" content="麻雀の点数計算を、あがりの形の確認・役・ドラ・符・点数・本場の 6 つの手順に分けて、初心者向けに具体例つきで解説します。">
+  <meta name="theme-color" content="#1b5e43">
+  <link rel="canonical" href="https://fu-koro.com/mahjong-fu-calculator/guide/flow/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:title" content="点数計算の流れ｜麻雀の点数計算 符ナビ">
+  <meta property="og:description" content="麻雀の点数計算を、あがりの形の確認・役・ドラ・符・点数・本場の 6 つの手順に分けて、初心者向けに具体例つきで解説します。">
+  <meta property="og:url" content="https://fu-koro.com/mahjong-fu-calculator/guide/flow/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://fu-koro.com/mahjong-fu-calculator/ogp.png">
+  <meta property="og:site_name" content="fu-koro のツール">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <script id="adsbygoogle-script" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953398950283499" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "点数計算の流れ",
+    "description": "麻雀の点数計算を、あがりの形の確認・役・ドラ・符・点数・本場の 6 つの手順に分けて、初心者向けに具体例つきで解説します。",
+    "mainEntityOfPage": "https://fu-koro.com/mahjong-fu-calculator/guide/flow/",
+    "inLanguage": "ja",
+    "image": "https://fu-koro.com/mahjong-fu-calculator/ogp.png",
+    "datePublished": "2026-09-27",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Person",
+      "name": "fu-koro",
+      "url": "https://fu-koro.com/about/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "fu-koro のツール",
+        "item": "https://fu-koro.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "符ナビ",
+        "item": "https://fu-koro.com/mahjong-fu-calculator/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "解説",
+        "item": "https://fu-koro.com/mahjong-fu-calculator/guide/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "点数計算の流れ",
+        "item": "https://fu-koro.com/mahjong-fu-calculator/guide/flow/"
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../../styles.css?v=dd3897c1e3">
+</head>
+<body>
+  <header class="site-header">
+    <button class="menu-button" type="button" popovertarget="site-menu" aria-label="メニューを開く">☰</button><nav class="site-menu" id="site-menu" popover aria-label="符ナビのページ"><button class="menu-close" type="button" popovertarget="site-menu" popovertargetaction="hide" aria-label="メニューを閉じる">✕</button><ul><li><a href="../../">点数計算</a></li><li><a href="../../#drill">符計算ドリル</a></li></ul><p class="site-menu-heading">解説</p><ul><li><a href="../../guide/">点数計算の解説</a></li><li><a href="../../guide/flow/" aria-current="page">点数計算の流れ</a></li><li><a href="../../guide/fu/">符計算のやり方</a></li><li><a href="../../guide/fu-mistakes/">符計算でよくある間違い</a></li><li><a href="../../guide/meld-fu/">面子と雀頭の符</a></li><li><a href="../../guide/wait-fu/">待ちの種類と符</a></li><li><a href="../../guide/score-table/">点数早見表</a></li><li><a href="../../guide/limits/">満貫・跳満・役満</a></li><li><a href="../../guide/yaku/">役一覧</a></li><li><a href="../../guide/honba/">本場と支払い</a></li></ul></nav>
+    <nav class="breadcrumb" aria-label="現在地">
+      <ol>
+        <li><a href="/">fu-koro のツール</a></li>
+        <li><a href="../../">符ナビ</a></li>
+        <li><a href="../">解説</a></li>
+      </ol>
+    </nav>
+    <h1 class="site-title">点数計算の流れ</h1>
+    <p class="site-lead">あがってから「何点？」が決まるまでを、6 つの手順に分けて説明します。</p>
+    <p class="page-date">更新日 <time datetime="2026-10-05">2026年10月5日</time></p>
+  </header>
+
+  <main>
+    <article class="guide guide-page">
+      <p>麻雀の点数は、<strong>翻（はん）</strong>と<strong>符（ふ）</strong>という 2 つの数で決まります。翻は「役とドラの数」、符は「手の形とあがり方」から数えます。この 2 つがわかれば、あとは表や計算で点数が出ます。</p>
+
+      <h2>1. あがりの形になっているか確かめる</h2>
+      <p>あがるには、14 枚が決まった形にそろっている必要があります。ほとんどの手は「3 枚の組が 4 つと、同じ牌 2 枚が 1 組」です。3 枚の組を<strong>面子（メンツ）</strong>、2 枚の組を<strong>雀頭（ジャントウ）</strong>と呼びます。</p>
+      <p><span class="tiles" role="img" aria-label="二萬 三萬 四萬 四筒 五筒 六筒 七索 八索 九索 二索 三索 四索 五筒 五筒"><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><text x="24" y="20" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#1d2a3a" text-anchor="middle" dominant-baseline="central">二</text><text x="24" y="46" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#c0392b" text-anchor="middle" dominant-baseline="central">萬</text></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><text x="24" y="20" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#1d2a3a" text-anchor="middle" dominant-baseline="central">三</text><text x="24" y="46" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#c0392b" text-anchor="middle" dominant-baseline="central">萬</text></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><text x="24" y="20" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#1d2a3a" text-anchor="middle" dominant-baseline="central">四</text><text x="24" y="46" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#c0392b" text-anchor="middle" dominant-baseline="central">萬</text></svg></span></span><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="15" cy="18" r="7" fill="none" stroke="#23508f" stroke-width="3.5"/><circle class="pip" cx="33" cy="18" r="7" fill="none" stroke="#23508f" stroke-width="3.5"/><circle class="pip" cx="15" cy="46" r="7" fill="none" stroke="#23508f" stroke-width="3.5"/><circle class="pip" cx="33" cy="46" r="7" fill="none" stroke="#23508f" stroke-width="3.5"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="14" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="24" cy="32" r="6.5" fill="none" stroke="#c0392b" stroke-width="3.3"/><circle class="pip" cx="14" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="15" cy="14" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="33" cy="14" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="15" cy="32" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="33" cy="32" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="15" cy="50" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="33" cy="50" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/></svg></span></span><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="21.25" y="4.5" width="5.5" height="15" rx="2.75" fill="#c0392b"/><rect class="stick" x="9.25" y="25.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="25.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="33.25" y="25.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="9.25" y="44.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="44.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="33.25" y="44.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="6.5" y="9" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="16.5" y="9" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="26.5" y="9" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="36.5" y="9" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="6.5" y="35" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="16.5" y="35" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="26.5" y="35" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="36.5" y="35" width="5" height="20" rx="2.5" fill="#1f7a4d"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="9.25" y="5.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="5.5" width="5.5" height="15" rx="2.75" fill="#c0392b"/><rect class="stick" x="33.25" y="5.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="9.25" y="24.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="24.5" width="5.5" height="15" rx="2.75" fill="#c0392b"/><rect class="stick" x="33.25" y="24.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="9.25" y="43.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="43.5" width="5.5" height="15" rx="2.75" fill="#c0392b"/><rect class="stick" x="33.25" y="43.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/></svg></span></span><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="21" y="9" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="21" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="21" y="9" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="11" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="31" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="12" y="9" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="30" y="9" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="12" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="30" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/></svg></span></span><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="14" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="24" cy="32" r="6.5" fill="none" stroke="#c0392b" stroke-width="3.3"/><circle class="pip" cx="14" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="14" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="24" cy="32" r="6.5" fill="none" stroke="#c0392b" stroke-width="3.3"/><circle class="pip" cx="14" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/></svg></span></span></span></p>
+      <p>面子には、数字が続く 3 枚（順子）と、同じ牌 3 枚（刻子）があります。例外として、2 枚の組を 7 つ集める七対子と、1・9・字牌を 1 枚ずつ集める国士無双もあがりの形です。</p>
+
+      <h2>2. 役を数える</h2>
+      <p>あがるには、<strong>役</strong>が 1 つ以上必要です。役にはそれぞれ翻数が決まっていて、成立した役の翻数を合計します。たとえば、リーチ（立直）は 1 翻、すべての面子が順子で待ちが両面の平和（ピンフ）も 1 翻です。</p>
+      <p>役が 1 つもない手は、形がそろっていてもあがれません。</p>
+
+      <h2>3. ドラを足す</h2>
+      <p>ドラは、持っているだけで 1 枚につき 1 翻増える牌です。卓でめくられている「ドラ表示牌」の次の牌がドラになります。ドラは役ではないので、ドラだけではあがれません。</p>
+
+      <h2>4. 符を数える</h2>
+      <p>符は、あがれば必ず付く 20 符に、あがり方・面子・雀頭・待ちの形による符を足し、最後に 10 符単位で切り上げて求めます。詳しくは<a href="../fu/">符計算のやり方</a>で説明しています。</p>
+      <p>5 翻以上の手は、符に関係なく点数が決まります（満貫）。符を数えるのは 4 翻以下のときです。</p>
+
+      <h2>5. 翻と符から点数を出す</h2>
+      <p>基本点は「符 × 2 の（翻数 + 2）乗」で、子のロンはその 4 倍、親のロンは 6 倍を 100 点単位に切り上げます。ツモのときは 3 人で分けて払います。実際には、翻と符の組み合わせごとの早見表を使うのが一般的です。</p>
+      <table class="guide-table is-text">
+        <thead>
+          <tr><th scope="col">あがった人</th><th scope="col">ロン</th><th scope="col">ツモ</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">子</th><td>振り込んだ人が 1 人で払う</td><td>親が 2、子 2 人が 1 の割合で払う</td></tr>
+          <tr><th scope="row">親</th><td>振り込んだ人が 1 人で払う（子の 1.5 倍）</td><td>子 3 人が同じ額ずつ払う</td></tr>
+        </tbody>
+      </table>
+
+      <h2>6. 本場があれば足す</h2>
+      <p>親があがったり、誰もあがれずに終わったりすると「本場」が 1 つ増えます。本場がある局であがると、1 本場につきロンは振り込んだ人が 300 点、ツモは払う 3 人がそれぞれ 100 点を多く払います。</p>
+
+      <h2>例: 子がリーチ・平和・ドラ 1 でロン</h2>
+      <p>自風が南（子）で、次の手をリーチしてロンしました。和了牌は二萬、ドラ表示牌は一索（ドラは二索）です。</p>
+      <p><span class="tiles" role="img" aria-label="三萬 四萬 四筒 五筒 六筒 七索 八索 九索 二索 三索 四索 五筒 五筒 あがり牌 二萬"><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><text x="24" y="20" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#1d2a3a" text-anchor="middle" dominant-baseline="central">三</text><text x="24" y="46" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#c0392b" text-anchor="middle" dominant-baseline="central">萬</text></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><text x="24" y="20" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#1d2a3a" text-anchor="middle" dominant-baseline="central">四</text><text x="24" y="46" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#c0392b" text-anchor="middle" dominant-baseline="central">萬</text></svg></span></span><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="15" cy="18" r="7" fill="none" stroke="#23508f" stroke-width="3.5"/><circle class="pip" cx="33" cy="18" r="7" fill="none" stroke="#23508f" stroke-width="3.5"/><circle class="pip" cx="15" cy="46" r="7" fill="none" stroke="#23508f" stroke-width="3.5"/><circle class="pip" cx="33" cy="46" r="7" fill="none" stroke="#23508f" stroke-width="3.5"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="14" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="24" cy="32" r="6.5" fill="none" stroke="#c0392b" stroke-width="3.3"/><circle class="pip" cx="14" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="15" cy="14" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="33" cy="14" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="15" cy="32" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="33" cy="32" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="15" cy="50" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="33" cy="50" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/></svg></span></span><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="21.25" y="4.5" width="5.5" height="15" rx="2.75" fill="#c0392b"/><rect class="stick" x="9.25" y="25.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="25.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="33.25" y="25.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="9.25" y="44.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="44.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="33.25" y="44.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="6.5" y="9" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="16.5" y="9" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="26.5" y="9" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="36.5" y="9" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="6.5" y="35" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="16.5" y="35" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="26.5" y="35" width="5" height="20" rx="2.5" fill="#1f7a4d"/><rect class="stick" x="36.5" y="35" width="5" height="20" rx="2.5" fill="#1f7a4d"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="9.25" y="5.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="5.5" width="5.5" height="15" rx="2.75" fill="#c0392b"/><rect class="stick" x="33.25" y="5.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="9.25" y="24.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="24.5" width="5.5" height="15" rx="2.75" fill="#c0392b"/><rect class="stick" x="33.25" y="24.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="9.25" y="43.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/><rect class="stick" x="21.25" y="43.5" width="5.5" height="15" rx="2.75" fill="#c0392b"/><rect class="stick" x="33.25" y="43.5" width="5.5" height="15" rx="2.75" fill="#1f7a4d"/></svg></span></span><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="21" y="9" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="21" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="21" y="9" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="11" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="31" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><rect class="stick" x="12" y="9" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="30" y="9" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="12" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/><rect class="stick" x="30" y="35" width="6" height="20" rx="3" fill="#1f7a4d"/></svg></span></span><span class="tile-group"><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="14" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="24" cy="32" r="6.5" fill="none" stroke="#c0392b" stroke-width="3.3"/><circle class="pip" cx="14" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/></svg></span><span class="tile"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><circle class="pip" cx="14" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="16" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="24" cy="32" r="6.5" fill="none" stroke="#c0392b" stroke-width="3.3"/><circle class="pip" cx="14" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/><circle class="pip" cx="34" cy="48" r="6.5" fill="none" stroke="#23508f" stroke-width="3.3"/></svg></span><span class="tile is-winning"><svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect class="tile-face" x="1" y="1" width="46" height="62" rx="5"/><text x="24" y="20" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#1d2a3a" text-anchor="middle" dominant-baseline="central">二</text><text x="24" y="46" font-size="22" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-weight="700" fill="#c0392b" text-anchor="middle" dominant-baseline="central">萬</text></svg></span></span></span></p>
+      <ol>
+        <li>形: 二三四萬・四五六筒・七八九索・二三四索の 4 面子と、五筒の雀頭。</li>
+        <li>役: リーチ 1 翻、平和 1 翻（すべて順子で、三四萬の両面待ち）。</li>
+        <li>ドラ: 二索が 1 枚で 1 翻。合計 3 翻。</li>
+        <li>符: 20 符に、鳴かずにロンした 10 符を足して 30 符。</li>
+        <li>点数: 30 符 3 翻の子のロンは 3,900 点。</li>
+        <li>本場: 1 本場なら 300 点を足して 4,200 点。</li>
+      </ol>
+      <aside class="guide-cta">
+        <p>自分の手で確かめるなら、牌をタップするだけで点数と符の内訳がわかる計算アプリをどうぞ。</p>
+        <a class="button" href="../../">符ナビで計算する</a>
+      </aside>
+
+      <h2>ほかの解説</h2>
+      <ul class="guide-links">
+        <li><a href="../fu/">符計算のやり方</a><span>副底・あがり方・面子・雀頭・待ちの符を足して切り上げる</span></li>
+        <li><a href="../meld-fu/">面子と雀頭の符</a><span>刻子・槓子の符の早見表と、雀頭に符が付く条件</span></li>
+        <li><a href="../wait-fu/">待ちの種類と符</a><span>両面・嵌張・辺張・単騎・双碰の見分け方と符</span></li>
+        <li><a href="../score-table/">点数早見表</a><span>符と翻から、子・親、ロン・ツモの点数を引く表</span></li>
+        <li><a href="../limits/">満貫・跳満・役満</a><span>翻が多い手の点数と、4 翻以下で満貫になる条件</span></li>
+        <li><a href="../yaku/">役一覧</a><span>すべての役の条件と、門前・鳴いたときの翻数</span></li>
+        <li><a href="../honba/">本場と支払い</a><span>本場の数え方と、ロン・ツモで上乗せする点数</span></li>
+        <li><a href="../fu-mistakes/">符計算でよくある間違い</a><span>表を覚えても間違えやすい 6 つの点を、手牌の例で確かめる</span></li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>標準的なルール（喰いタンあり、連風牌の雀頭は 2 符、切り上げ満貫なし、ダブル役満なし）で説明しています。</p>
+    <ul class="footer-links">
+      <li><a href="/">fu-koro のツール</a></li>
+      <li><a href="/about/">運営者情報</a></li>
+      <li><a href="/privacy/">プライバシーポリシー</a></li>
+      <li><a href="/contact/">お問い合わせ</a></li>
+    </ul>
+    <small>© 2026 fu-koro</small>
+  </footer>
+</body>
+</html>

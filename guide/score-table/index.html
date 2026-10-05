@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>点数早見表｜麻雀の点数計算 符ナビ</title>
+  <meta name="description" content="麻雀の点数早見表。符（20〜110 符）と翻（1〜4 翻）から、子のロン・子のツモ・親のロン・親のツモの点数がすぐわかります。満貫になる組み合わせや、出てこない組み合わせも示しています。">
+  <meta name="theme-color" content="#1b5e43">
+  <link rel="canonical" href="https://fu-koro.com/mahjong-fu-calculator/guide/score-table/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:title" content="点数早見表｜麻雀の点数計算 符ナビ">
+  <meta property="og:description" content="麻雀の点数早見表。符（20〜110 符）と翻（1〜4 翻）から、子のロン・子のツモ・親のロン・親のツモの点数がすぐわかります。満貫になる組み合わせや、出てこない組み合わせも示しています。">
+  <meta property="og:url" content="https://fu-koro.com/mahjong-fu-calculator/guide/score-table/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://fu-koro.com/mahjong-fu-calculator/ogp.png">
+  <meta property="og:site_name" content="fu-koro のツール">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <script id="adsbygoogle-script" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4953398950283499" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "点数早見表",
+    "description": "麻雀の点数早見表。符（20〜110 符）と翻（1〜4 翻）から、子のロン・子のツモ・親のロン・親のツモの点数がすぐわかります。満貫になる組み合わせや、出てこない組み合わせも示しています。",
+    "mainEntityOfPage": "https://fu-koro.com/mahjong-fu-calculator/guide/score-table/",
+    "inLanguage": "ja",
+    "image": "https://fu-koro.com/mahjong-fu-calculator/ogp.png",
+    "datePublished": "2026-09-27",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Person",
+      "name": "fu-koro",
+      "url": "https://fu-koro.com/about/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "fu-koro のツール",
+        "item": "https://fu-koro.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "符ナビ",
+        "item": "https://fu-koro.com/mahjong-fu-calculator/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "解説",
+        "item": "https://fu-koro.com/mahjong-fu-calculator/guide/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "点数早見表",
+        "item": "https://fu-koro.com/mahjong-fu-calculator/guide/score-table/"
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../../styles.css?v=dd3897c1e3">
+</head>
+<body>
+  <header class="site-header">
+    <button class="menu-button" type="button" popovertarget="site-menu" aria-label="メニューを開く">☰</button><nav class="site-menu" id="site-menu" popover aria-label="符ナビのページ"><button class="menu-close" type="button" popovertarget="site-menu" popovertargetaction="hide" aria-label="メニューを閉じる">✕</button><ul><li><a href="../../">点数計算</a></li><li><a href="../../#drill">符計算ドリル</a></li></ul><p class="site-menu-heading">解説</p><ul><li><a href="../../guide/">点数計算の解説</a></li><li><a href="../../guide/flow/">点数計算の流れ</a></li><li><a href="../../guide/fu/">符計算のやり方</a></li><li><a href="../../guide/fu-mistakes/">符計算でよくある間違い</a></li><li><a href="../../guide/meld-fu/">面子と雀頭の符</a></li><li><a href="../../guide/wait-fu/">待ちの種類と符</a></li><li><a href="../../guide/score-table/" aria-current="page">点数早見表</a></li><li><a href="../../guide/limits/">満貫・跳満・役満</a></li><li><a href="../../guide/yaku/">役一覧</a></li><li><a href="../../guide/honba/">本場と支払い</a></li></ul></nav>
+    <nav class="breadcrumb" aria-label="現在地">
+      <ol>
+        <li><a href="/">fu-koro のツール</a></li>
+        <li><a href="../../">符ナビ</a></li>
+        <li><a href="../">解説</a></li>
+      </ol>
+    </nav>
+    <h1 class="site-title">点数早見表</h1>
+    <p class="site-lead">符と翻がわかれば、表を引くだけで点数が決まります。</p>
+    <p class="page-date">更新日 <time datetime="2026-10-05">2026年10月5日</time></p>
+  </header>
+
+  <main>
+    <article class="guide guide-page">
+      <p>符と翻から点数を計算する式は決まっていますが、毎回計算するのは大変です。卓では、この早見表を引くのがいちばん早くて確実です。</p>
+
+      <h2>表の見方</h2>
+      <ul>
+        <li>縦が符、横が翻です。あがった手の符と翻が交わるところが点数です。</li>
+        <li>子のツモは「子が払う点-親が払う点」、親のツモは子 3 人がそれぞれ払う点です。</li>
+        <li>色の付いた数字は満貫です。5 翻以上は符に関係なく満貫以上になります（<a href="../limits/">満貫・跳満・役満</a>）。</li>
+        <li>「—」は、実際には出てこない組み合わせです。20 符は平和ツモだけなのでロンはなく、25 符は七対子だけなので 2 翻（ツモは 3 翻）からです。</li>
+      </ul>
+
+      <h2>子のロン</h2>
+      <div class="table-scroll">
+      <table class="guide-table score-table" data-table="nonDealerRon">
+        <caption>子のロン（振り込んだ人が払う点）</caption>
+        <thead>
+          <tr><th scope="col">符</th><th scope="col">1翻</th><th scope="col">2翻</th><th scope="col">3翻</th><th scope="col">4翻</th></tr>
+        </thead>
+        <tbody>
+          <tr data-fu="20"><th scope="row">20符</th><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr data-fu="25"><th scope="row">25符</th><td>—</td><td>1,600</td><td>3,200</td><td>6,400</td></tr>
+          <tr data-fu="30"><th scope="row">30符</th><td>1,000</td><td>2,000</td><td>3,900</td><td>7,700</td></tr>
+          <tr data-fu="40"><th scope="row">40符</th><td>1,300</td><td>2,600</td><td>5,200</td><td class="is-limit">8,000</td></tr>
+          <tr data-fu="50"><th scope="row">50符</th><td>1,600</td><td>3,200</td><td>6,400</td><td class="is-limit">8,000</td></tr>
+          <tr data-fu="60"><th scope="row">60符</th><td>2,000</td><td>3,900</td><td>7,700</td><td class="is-limit">8,000</td></tr>
+          <tr data-fu="70"><th scope="row">70符</th><td>2,300</td><td>4,500</td><td class="is-limit">8,000</td><td class="is-limit">8,000</td></tr>
+          <tr data-fu="80"><th scope="row">80符</th><td>2,600</td><td>5,200</td><td class="is-limit">8,000</td><td class="is-limit">8,000</td></tr>
+          <tr data-fu="90"><th scope="row">90符</th><td>2,900</td><td>5,800</td><td class="is-limit">8,000</td><td class="is-limit">8,000</td></tr>
+          <tr data-fu="100"><th scope="row">100符</th><td>3,200</td><td>6,400</td><td class="is-limit">8,000</td><td class="is-limit">8,000</td></tr>
+          <tr data-fu="110"><th scope="row">110符</th><td>3,600</td><td>7,100</td><td class="is-limit">8,000</td><td class="is-limit">8,000</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h2>子のツモ</h2>
+      <div class="table-scroll">
+      <table class="guide-table score-table" data-table="nonDealerTsumo">
+        <caption>子のツモ（子が払う点-親が払う点）</caption>
+        <thead>
+          <tr><th scope="col">符</th><th scope="col">1翻</th><th scope="col">2翻</th><th scope="col">3翻</th><th scope="col">4翻</th></tr>
+        </thead>
+        <tbody>
+          <tr data-fu="20"><th scope="row">20符</th><td>—</td><td>400-700</td><td>700-1,300</td><td>1,300-2,600</td></tr>
+          <tr data-fu="25"><th scope="row">25符</th><td>—</td><td>—</td><td>800-1,600</td><td>1,600-3,200</td></tr>
+          <tr data-fu="30"><th scope="row">30符</th><td>300-500</td><td>500-1,000</td><td>1,000-2,000</td><td>2,000-3,900</td></tr>
+          <tr data-fu="40"><th scope="row">40符</th><td>400-700</td><td>700-1,300</td><td>1,300-2,600</td><td class="is-limit">2,000-4,000</td></tr>
+          <tr data-fu="50"><th scope="row">50符</th><td>400-800</td><td>800-1,600</td><td>1,600-3,200</td><td class="is-limit">2,000-4,000</td></tr>
+          <tr data-fu="60"><th scope="row">60符</th><td>500-1,000</td><td>1,000-2,000</td><td>2,000-3,900</td><td class="is-limit">2,000-4,000</td></tr>
+          <tr data-fu="70"><th scope="row">70符</th><td>600-1,200</td><td>1,200-2,300</td><td class="is-limit">2,000-4,000</td><td class="is-limit">2,000-4,000</td></tr>
+          <tr data-fu="80"><th scope="row">80符</th><td>700-1,300</td><td>1,300-2,600</td><td class="is-limit">2,000-4,000</td><td class="is-limit">2,000-4,000</td></tr>
+          <tr data-fu="90"><th scope="row">90符</th><td>800-1,500</td><td>1,500-2,900</td><td class="is-limit">2,000-4,000</td><td class="is-limit">2,000-4,000</td></tr>
+          <tr data-fu="100"><th scope="row">100符</th><td>800-1,600</td><td>1,600-3,200</td><td class="is-limit">2,000-4,000</td><td class="is-limit">2,000-4,000</td></tr>
+          <tr data-fu="110"><th scope="row">110符</th><td>900-1,800</td><td>1,800-3,600</td><td class="is-limit">2,000-4,000</td><td class="is-limit">2,000-4,000</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h2>親のロン</h2>
+      <div class="table-scroll">
+      <table class="guide-table score-table" data-table="dealerRon">
+        <caption>親のロン（振り込んだ人が払う点）</caption>
+        <thead>
+          <tr><th scope="col">符</th><th scope="col">1翻</th><th scope="col">2翻</th><th scope="col">3翻</th><th scope="col">4翻</th></tr>
+        </thead>
+        <tbody>
+          <tr data-fu="20"><th scope="row">20符</th><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr data-fu="25"><th scope="row">25符</th><td>—</td><td>2,400</td><td>4,800</td><td>9,600</td></tr>
+          <tr data-fu="30"><th scope="row">30符</th><td>1,500</td><td>2,900</td><td>5,800</td><td>11,600</td></tr>
+          <tr data-fu="40"><th scope="row">40符</th><td>2,000</td><td>3,900</td><td>7,700</td><td class="is-limit">12,000</td></tr>
+          <tr data-fu="50"><th scope="row">50符</th><td>2,400</td><td>4,800</td><td>9,600</td><td class="is-limit">12,000</td></tr>
+          <tr data-fu="60"><th scope="row">60符</th><td>2,900</td><td>5,800</td><td>11,600</td><td class="is-limit">12,000</td></tr>
+          <tr data-fu="70"><th scope="row">70符</th><td>3,400</td><td>6,800</td><td class="is-limit">12,000</td><td class="is-limit">12,000</td></tr>
+          <tr data-fu="80"><th scope="row">80符</th><td>3,900</td><td>7,700</td><td class="is-limit">12,000</td><td class="is-limit">12,000</td></tr>
+          <tr data-fu="90"><th scope="row">90符</th><td>4,400</td><td>8,700</td><td class="is-limit">12,000</td><td class="is-limit">12,000</td></tr>
+          <tr data-fu="100"><th scope="row">100符</th><td>4,800</td><td>9,600</td><td class="is-limit">12,000</td><td class="is-limit">12,000</td></tr>
+          <tr data-fu="110"><th scope="row">110符</th><td>5,300</td><td>10,600</td><td class="is-limit">12,000</td><td class="is-limit">12,000</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h2>親のツモ</h2>
+      <div class="table-scroll">
+      <table class="guide-table score-table" data-table="dealerTsumo">
+        <caption>親のツモ（子がそれぞれ払う点）</caption>
+        <thead>
+          <tr><th scope="col">符</th><th scope="col">1翻</th><th scope="col">2翻</th><th scope="col">3翻</th><th scope="col">4翻</th></tr>
+        </thead>
+        <tbody>
+          <tr data-fu="20"><th scope="row">20符</th><td>—</td><td>700</td><td>1,300</td><td>2,600</td></tr>
+          <tr data-fu="25"><th scope="row">25符</th><td>—</td><td>—</td><td>1,600</td><td>3,200</td></tr>
+          <tr data-fu="30"><th scope="row">30符</th><td>500</td><td>1,000</td><td>2,000</td><td>3,900</td></tr>
+          <tr data-fu="40"><th scope="row">40符</th><td>700</td><td>1,300</td><td>2,600</td><td class="is-limit">4,000</td></tr>
+          <tr data-fu="50"><th scope="row">50符</th><td>800</td><td>1,600</td><td>3,200</td><td class="is-limit">4,000</td></tr>
+          <tr data-fu="60"><th scope="row">60符</th><td>1,000</td><td>2,000</td><td>3,900</td><td class="is-limit">4,000</td></tr>
+          <tr data-fu="70"><th scope="row">70符</th><td>1,200</td><td>2,300</td><td class="is-limit">4,000</td><td class="is-limit">4,000</td></tr>
+          <tr data-fu="80"><th scope="row">80符</th><td>1,300</td><td>2,600</td><td class="is-limit">4,000</td><td class="is-limit">4,000</td></tr>
+          <tr data-fu="90"><th scope="row">90符</th><td>1,500</td><td>2,900</td><td class="is-limit">4,000</td><td class="is-limit">4,000</td></tr>
+          <tr data-fu="100"><th scope="row">100符</th><td>1,600</td><td>3,200</td><td class="is-limit">4,000</td><td class="is-limit">4,000</td></tr>
+          <tr data-fu="110"><th scope="row">110符</th><td>1,800</td><td>3,600</td><td class="is-limit">4,000</td><td class="is-limit">4,000</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h2>表を使わずに計算するには</h2>
+      <p>基本点は「符 × 2 の（翻数 + 2）乗」です。子のロンは基本点の 4 倍、親のロンは 6 倍を、100 点単位に切り上げます。ツモのときは、子のツモなら子が基本点の 1 倍、親が 2 倍を、親のツモなら子がそれぞれ 2 倍を、同じく 100 点単位に切り上げて払います。</p>
+      <p>たとえば 30 符 3 翻なら、基本点は 30 × 32 = 960 点で、子のロンは 960 × 4 = 3,840 点を切り上げて 3,900 点です。基本点が 2,000 点を超えると満貫として 2,000 点に抑えます。</p>
+      <aside class="guide-cta">
+        <p>自分の手で確かめるなら、牌をタップするだけで点数と符の内訳がわかる計算アプリをどうぞ。</p>
+        <a class="button" href="../../">符ナビで計算する</a>
+      </aside>
+
+      <h2>ほかの解説</h2>
+      <ul class="guide-links">
+        <li><a href="../flow/">点数計算の流れ</a><span>あがってから点数が決まるまでの 6 つの手順</span></li>
+        <li><a href="../fu/">符計算のやり方</a><span>副底・あがり方・面子・雀頭・待ちの符を足して切り上げる</span></li>
+        <li><a href="../meld-fu/">面子と雀頭の符</a><span>刻子・槓子の符の早見表と、雀頭に符が付く条件</span></li>
+        <li><a href="../wait-fu/">待ちの種類と符</a><span>両面・嵌張・辺張・単騎・双碰の見分け方と符</span></li>
+        <li><a href="../limits/">満貫・跳満・役満</a><span>翻が多い手の点数と、4 翻以下で満貫になる条件</span></li>
+        <li><a href="../yaku/">役一覧</a><span>すべての役の条件と、門前・鳴いたときの翻数</span></li>
+        <li><a href="../honba/">本場と支払い</a><span>本場の数え方と、ロン・ツモで上乗せする点数</span></li>
+        <li><a href="../fu-mistakes/">符計算でよくある間違い</a><span>表を覚えても間違えやすい 6 つの点を、手牌の例で確かめる</span></li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>標準的なルール（喰いタンあり、連風牌の雀頭は 2 符、切り上げ満貫なし、ダブル役満なし）で説明しています。</p>
+    <ul class="footer-links">
+      <li><a href="/">fu-koro のツール</a></li>
+      <li><a href="/about/">運営者情報</a></li>
+      <li><a href="/privacy/">プライバシーポリシー</a></li>
+      <li><a href="/contact/">お問い合わせ</a></li>
+    </ul>
+    <small>© 2026 fu-koro</small>
+  </footer>
+</body>
+</html>
